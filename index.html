@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<link rel="stylesheet" href="styles.css">
+<body>
+<h1>CRUD Posts</h1>
+<div class="container">
+
+    <div class="left">
+        <form id="form">
+            <label for="post">Insert post information here</label>
+            <br><br>
+            <textarea name="post" id="input" cols="30" rows="10"></textarea>
+            <br><br>
+            <div id="msg"></div>
+            <button type="submit" id="submit">Post</button>
+        </form>
+    </div>
+
+
+    <div class="right">
+        <h3>My Posts Here</h3>
+        <div id="posts">
+            <div>
+                <p>Post 1</p>
+                <span class="options">
+                     <i onClick="editPost(this)" class="fas fa-edit"></i>
+                    <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
+                </span>
+            </div>
+
+            <div>
+                <p>Post 2</p>
+                <span class="options">
+                     <i onClick="editPost(this)" class="fas fa-edit"></i>
+                    <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
+                </span>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+<script src="main.js"></script>
+</body>
+
+</html>
